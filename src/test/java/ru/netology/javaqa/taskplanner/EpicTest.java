@@ -23,4 +23,5 @@ class EpicTest {
         boolean actual = epic.matches("Картошка");
         Assertions.assertFalse(actual);
     }
+
 }

@@ -24,4 +24,15 @@ class TaskTest {
 
         Assertions.assertFalse(actual);
     }
+
+    @Test
+    public void testGetTitle() {
+        SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
+
+        boolean actual = simpleTask.matches("бабушке");
+
+        Assertions.assertFalse(actual, simpleTask.getTitle());
+    }
+
+
 }
